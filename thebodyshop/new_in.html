@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/new_in.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="js/new_in.js"></script>
+  <script src="js/common.js"></script>
+  <title>더바디샵 | New In</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="gnb">
+        <button id="menu-btn"><span>menu</span></button>
+        <a href="#"><span>매장안내</span></a>
+        <a href="index.html">
+          <img src="images/thebodyshop_logo.png" alt="thebodyshop_logo">
+        </a>
+        <ul>
+          <li>
+            <a href="#"><span>검색</span></a>
+          </li>
+          <li>
+            <a href="#"><span>로그인</span></a>
+          </li>
+          <li>
+            <a href="#"><span>찜</span></a>
+          </li>
+          <li>
+            <a href="#"><span>장바구니</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <ul id="gnb-menu">
+        <li>
+          <a href="#">NEW</a>
+          <ul class="sub-menu">
+            <li><a href="#">NEW IN</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">TRENDING</a>
+          <ul class="sub-menu">
+            <li><a href="#">Tip & Advice</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Vegan</a></li>
+            <li><a href="#">Tea Tree</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">GIFTS</a>
+          <ul class="sub-menu">
+            <li><a href="#">선물세트 전체보기</a></li>
+            <li><a href="#">1만원대 선물세트</a></li>
+            <li><a href="#">2만원대 선물세트</a></li>
+            <li><a href="#">3만원대 선물세트</a></li>
+            <li><a href="#">4~5만원대 이상 선물세트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">FACE</a>
+          <ul class="sub-menu">
+            <li><a href="#">클렌저</a></li>
+            <li><a href="#">스크럽&마스크</a></li>
+            <li><a href="#">페이스오일</a></li>
+            <li><a href="#">토너&미스트</a></li>
+            <li><a href="#">세럼</a></li>
+            <li><a href="#">모이스처라이저</a></li>
+            <li><a href="#">스킨 메이크업</a></li>
+            <li><a href="#">립케어</a></li>
+            <li><a href="#">선케어</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BODY</a>
+          <ul class="sub-menu">
+            <li><a href="#">바디워시</a></li>
+            <li><a href="#">바디 스크럽</a></li>
+            <li><a href="#">바디 미스트</a></li>
+            <li><a href="#">비누</a></li>
+            <li><a href="#">대용량 바디케어</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">FRAGRANCE</a>
+          <ul class="sub-menu">
+            <li><a href="#">FRAGRANCE 전체보기</a></li>
+            <li><a href="#">오 드 퍼퓸</a></li>
+            <li><a href="#">오 드 뚜왈렛</a></li>
+            <li><a href="#">바디미스트</a></li>
+            <li><a href="#">For Everyone</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">HAIR</a>
+          <ul class="sub-menu">
+            <li><a href="#">샴푸</a></li>
+            <li><a href="#">컨디셔너&트리트먼트</a></li>
+            <li><a href="#">액세서리</a></li>
+            <li><a href="#">대용량 헤어케어</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">아울렛</a>
+          <ul class="sub-menu">
+            <li><a href="#">아울렛 전체보기</a></li>
+            <li><a href="#">40% 할인</a></li>
+            <li><a href="#">50% 할인</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">LYB멤버십</a>
+          <ul class="sub-menu">
+            <li><a href="#">LYB 멤버십 등급 및 혜택</a></li>
+            <li><a href="#">포인트 안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">ABOUT US</a>
+          <ul class="sub-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">진행 중인 이벤트</a></li>
+            <li><a href="#">지난 이벤트</a></li>
+            <li><a href="#">캠페인 히스토리</a></li>
+            <li><a href="#">더바디샵 뉴스</a></li>
+          </ul>
+        </li>
+        <li><a href="#">REVIEW</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="cart-overlay">
+      <p>장바구니에 추가하시겠습니까?</p>
+      <div>
+        <button class="on">확인</button>
+        <button class="on">취소</button>
+      </div>
+      <div>
+        <button>장바구니 가기</button>
+        <button>계속 쇼핑하기</button>
+      </div>
+    </div>
+
+    <div id="overlay">
+      <div>
+        <div>
+          <h3>필터 선택</h3>
+          <button id="close-btn"><span>닫기</span></button>
+        </div>
+
+        <ul class="on">
+          <li class="on">판매순</li>
+          <li>높은가격순</li>
+          <li>낮은가격순</li>
+          <li>조회순</li>
+        </ul>
+
+        <ul>
+          <li>기간한정</li>
+          <li>할인제품</li>
+          <li>한정수량</li>
+        </ul>
+
+        <ul>
+          <li>1만원 미만</li>
+          <li>1만원대</li>
+          <li>2만원대</li>
+          <li>3만원대</li>
+          <li>4만원대 이상</li>
+        </ul>
+
+        <ul>
+          <li>스킨 디펜스</li>
+          <li>진저</li>
+          <li>티트리</li>
+          <li>화이트 머스크</li>
+          <li>모링가</li>
+          <li>블루벨</li>
+          <li>풀 플라워</li>
+          <li>에델바이스</li>
+        </ul>
+
+        <ul>
+          <li>~1점</li>
+          <li>~2점</li>
+          <li>~3점</li>
+          <li>~4점</li>
+          <li>~5점</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="banner-container">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">NEW IN</a></li>
+      </ul>
+      <div>
+        <h2>NEW IN</h2>
+        <p>더바디샵의 새롭게 선보이는 따끈따끈한 신제품을 만나보세요</p>
+      </div>
+      <img src="images/new_in_banner_item.png" alt="new in products">
+    </div>
+
+    <div id="product-container">
+      <ul id="filter">
+        <li class="on">판매순</li>
+        <li>제품특징</li>
+        <li>가격대</li>
+        <li>라인별</li>
+        <li>평점</li>
+        <li>필터 초기화</li>
+      </ul>
+
+      <p><span>14개</span>의 상품이 있습니다</p>
+      <ul id="product-items">
+        <li data-price="24500" data-feature="할인제품" data-category="진저" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/ginger_scalp_shampoo.png" alt="진저 스캘프 샴푸">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">진저 스캘프 케어 샴푸</a>
+          </h4>
+          <span>24,500원</span>
+          <span>5.0 (529)</span>
+        </li>
+
+        <li data-price="34000" data-category="화이트 머스크" data-rate="4.0">
+          <div>
+            <a href="#">
+              <img src="images/white_musk_lotion.png" alt="화이트머스크 로션">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">화이트 머스크 센티드 바디 로션</a>
+          </h4>
+          <span>34,000원</span>
+          <span>4.0 (238)</span>
+        </li>
+
+        <li data-price="39000" data-category="진저" data-rate="4.0">
+          <div>
+            <a href="#">
+              <img src="images/ginger_scalp_serum.png" alt="진저스캘프 세럼">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">진저 스캘프 케어 스캘프 세럼</a>
+          </h4>
+          <span>39,000원</span>
+          <span>4.0 (41)</span>
+        </li>
+
+        <li data-price="22000" data-category="모링가" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/moringa_bodymist.png" alt="모링가 바디미스트">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">모링가 바디 미스트</a>
+          </h4>
+          <span>22,000원</span>
+          <span>5.0 (181)</span>
+        </li>
+
+        <li data-price="39500" data-category="블루벨" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/bluebell_sleep_essential_oil.png" alt="슬립 에센셜 오일 블루벨">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">슬립 에센셜 오일 블루벨</a>
+          </h4>
+          <span>39,500원</span>
+          <span>5.0 (2)</span>
+        </li>
+
+        <li data-price="24500" data-feature="기간한정" data-category="풀 플라워" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/full_magnolia.png" alt="오 드 퍼퓸 풀 매그놀리아">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">오 드 퍼퓸 풀매그놀리아</a>
+          </h4>
+          <span>24,500원</span>
+          <span>5.0 (529)</span>
+        </li>
+
+        <li data-price="24500" data-feature="기간한정" data-category="풀 플라워" data-rate="3.0">
+          <div>
+            <a href="#">
+              <img src="images/full_orange_blossom.png" alt="오 드 퍼퓸 풀 오렌지 블라썸">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">오 드 퍼퓸 풀 오렌지 블라썸</a>
+          </h4>
+          <span>24,500원</span>
+          <span>3.0 (15)</span>
+        </li>
+
+        <li data-price="24500" data-feature="할인제품" data-category="진저" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/shampoo_conditioner_set.png" alt="진저 스캘프 샴푸&컨디셔너 2+1">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">진저 스캘프 샴푸&컨디셔너 2+1</a>
+          </h4>
+          <span>24,500원</span>
+          <span>5.0 (529)</span>
+        </li>
+
+        <li data-price="64000" data-feature="할인제품" data-category="에델바이스" data-rate="2.0">
+          <div>
+            <a href="#">
+              <img src="images/edelweiss_daily_serum_concentrate.png" alt="에델바이스 데일리 세럼 컨센트레이트">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">에델바이스 데일리세럼 컨센트레이트</a>
+          </h4>
+          <span>64,000원</span>
+          <span>2.0 (261)</span>
+        </li>
+
+        <li data-price="41000" data-feature="한정수량" data-category="스킨 디펜스" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/skin_defence_daily_multiprotection.png" alt="스킨 디펜스 데일리 멀티 프로텍션 라이트 에센스">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">스킨 디펜스 데일리 멀티 프로텍션 라이트 에센스</a>
+          </h4>
+          <span>41,000원</span>
+          <span>5.0 (12)</span>
+        </li>
+
+        <li data-price="54000" data-category="에델바이스" data-rate="2.5">
+          <div>
+            <a href="#">
+              <img src="images/edelweiss_prep_essence.png" alt="에델바이스 프랩 에센스">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">에델바이스 프랩 에센스</a>
+          </h4>
+          <span>54,000원</span>
+          <span>2.5 (55)</span>
+        </li>
+
+        <li data-price="26500" data-category="블루벨" data-rate="3.0">
+          <div>
+            <a href="#">
+              <img src="images/bluebell_showercream.png" alt="샤워 크림 블루벨">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">샤워 크림 블루벨</a>
+          </h4>
+          <span>26,500원</span>
+          <span>3.0 (20)</span>
+        </li>
+
+        <li data-price="44000" data-category="에델바이스" data-rate="4.1">
+          <div>
+            <a href="#">
+              <img src="images/edelweiss_bouncy_sleeping_mask.png" alt="에델바이스 바운싱 슬리핑 마스크">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">에델바이스 바운싱 슬리핑 마스크</a>
+          </h4>
+          <span>44,000원</span>
+          <span>4.1 (7)</span>
+        </li>
+
+        <li data-price="25000" data-category="티트리" data-rate="5.0">
+          <div>
+            <a href="#">
+              <img src="images/tea_tree_oil.png" alt="티트리 오일">
+            </a>
+            <button class="cart-btn"><span>장바구니</span></button>
+            <button class="like-btn"><span>찜하기</span></button>
+          </div>
+          <h4>
+            <a href="#">티트리 오일</a>
+          </h4>
+          <span>25,000원</span>
+          <span>5.0 (169)</span>
+        </li>
+      </ul>
+    </div>
+    <!-- /.product-container -->
+
+    <button id="top"><span>맨 위로</span></button>
+  </main>
+
+  <footer>
+    <div>
+      <ul>
+        <li>
+          <a href="#">080-759-7700</a>
+          <p>평일 10:00 ~ 17:00<br>
+            (점심시간 12:00 ~ 13:00)<br>
+            토,일 공휴일 휴무</p>
+          <p>Republic of Korea</p>
+        </li>
+        <li>
+          <a href="#">고객만족센터</a>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">1:1문의</a></li>
+            <li><a href="#">대량 구매 문의</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">매장안내</a>
+          <ul>
+            <li><a href="#">매장안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">ABOUT US</a>
+          <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">OUR VALUES</a></li>
+            <li><a href="#">더바디샵 뉴스</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">캠페인</a></li>
+          </ul>
+        </li>
+        <li>CONNECT WITH US</li>
+      </ul>
+
+      <div>
+        <div>
+          <p>본 사이트에 게시된 자료에 대한 권리는 ㈜비에스케이코퍼레이션에 있으며, 정보를 가공, 판매하는 행위등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+          <p>(주)비에스케이코퍼레이션 | 대표이사 : 오미경,나상도 | 대표전화 080-759-7700 | 팩스 02-759-0788<br>
+            이메일 : webmaster@thebodyshop.co.kr ㅣ 주소 : 서울특별시 강남구 학동로 401(청담동) 금하빌딩 13층<br>
+            사업자등록번호 116-81-62784 <a href="#">[사업자정보확인]</a> ㅣ 통신판매업신고번호 제 2010-서울강남-02017호 ㅣ 개인정보보호책임자 :
+            나상도(privacy@bskco.kr)</p>
+        </div>
+        <div>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용 약관</a>
+          <a href="#">패밀리 사이트</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

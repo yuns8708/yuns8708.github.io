@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'locus_sangsang';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  font-family: 'locus_sangsang', sans-serif;
+  color: #423a3a;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#home-btn {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  z-index: 100;
+}
+
+#home-btn > a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: #423a3a;
+  border: 1px solid #423a3a;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+#content > div:nth-child(2) {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+}
+
+#content-nav {
+  position: absolute;
+  top: 123px;
+  right: 0;
+}
+
+#content-nav > ul {
+  font-size: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+#content-nav ul > li {
+  padding: 30px 0;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+  margin-bottom: 2px;
+}
+
+#content-nav ul > li.on {
+  background-size: 100% 10%;
+  background-color: rgba(999, 999, 999, 0.4);
+}
+
+#content-nav > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  background-color: #494040;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#content-container {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+}
+
+#content-container > .content-items {
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+#content-container > .content-items > div {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+}
+
+#content-container > .content-items:not(:first-child) > div {
+  left: 100%;
+}
+
+#content > h2 {
+  font-weight: bold;
+  font-size: 60px;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#content > h2::after {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 2.5px;
+  background-color: #494040;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#content-container > .content-items > div > img {
+  width: 900px;
+  position: absolute;
+  bottom: 0;
+  left: 270px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+#content-container > .content-items > div > div {
+  position: absolute;
+  bottom: 100px;
+  line-height: 30px;
+}
+
+#content-container > .content-items > div > div > h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#content-container > .content-items > div > div > p {
+  font-size: 20px;
+}
+
+#content-container > .content-items > div > div > p:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+/* loading */
+#loading {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/brand_story_bg3.png");
+  background-size: cover;
+  background-position-x: -100px;
+  position: absolute;
+  z-index: 500;
+}
+
+#loading > div {
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#loading > div > img {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+#loading > div > h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0;
+}
+
+/* animation */
+#loading {
+  animation: lodingBackgroundAnimation 16s linear infinite;
+}
+
+#loading > div > img.active {
+  animation: loadingLogoAnimation 0.6s;
+}
+
+#loading > div > h1.active {
+  animation: loadingLogoAnimation 0.6s;
+}
+
+@keyframes loadingLogoAnimation {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes lodingBackgroundAnimation {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: -100vW;
+  }
+}
+
+/* page1 */
+#content-container > .content-items:nth-child(1) {
+  background: linear-gradient(180deg, #ffd3c8, #ffd3c8);
+}
+
+#content-container > .content-items:nth-child(1) > div > img {
+  width: 1100px;
+  left: 170px;
+}
+
+/* page2 */
+#content-container > .content-items:nth-child(2) {
+  background: linear-gradient(180deg, #c5e9f7, #add5f1);
+}
+
+/* page3 */
+#content-container > .content-items:nth-child(3) {
+  background: linear-gradient(180deg, #fde3b0, #ffd599);
+}
