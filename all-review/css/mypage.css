@@ -1,0 +1,126 @@
+.mypage_profile {
+    display: flex;
+    padding: 100px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.mypage_profile > img {
+    width: 80px;
+    height: 80px;
+}
+
+.mypage_profile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.mypage_profile > div > span {
+    line-height: 22px;
+}
+
+.mypage_profile > div > span:first-child {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* 개인 설정, 설정 버튼 */
+.mypage_profile > ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.mypage_profile > ul > .mypage_button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.mypage_profile > ul > .mypage_button:nth-child(1) {
+    background: url("../icons/user-regular.svg") no-repeat;
+    margin-right: 10px;
+}
+
+.mypage_profile > ul > .mypage_button:nth-child(2) {
+    background: url("../icons/icon_setting.png") no-repeat;
+    background-size: contain;
+}
+
+.mypage_profile > ul > .mypage_button > ul {
+    position: absolute;
+    top: 30px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 10px 0;
+    display: none;
+    background-color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.mypage_profile > ul > .mypage_button > ul > li {
+    width: 80px;
+    padding: 8px 20px;
+}
+
+.mypage_profile > ul > .mypage_button:nth-child(1) > ul > li:first-child {
+    color: #ff335a;
+}
+
+.mypage_profile > ul > .mypage_button > ul > li:hover {
+    font-weight: bold;
+}
+
+.mypage_profile > ul > li > button {
+    width: 95px;
+    height: 35px;
+    border: none;
+    background-color: #76c100;
+    color: white;
+    border-radius: 4px;
+}
+
+.mypage_profile > ul > li > button:hover {
+    background-color: #3d9929;
+    cursor: pointer;
+}
+
+.mypage_profile > ul > li > span {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* 게시물, 팔로워, 팔로우 */
+#content > div:nth-child(2) {
+    margin: 35px 0;
+    text-align: center;
+}
+
+#content > div:nth-child(2) > a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    position: relative;
+
+}
+
+#content > div:nth-child(2) > a:not(:last-child) {
+    margin-right: 50px;
+}
+
+#content > div:nth-child(2) > a.check::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #76c100;
+    left: -7px;
+    right: -7px;
+    bottom: -8px;
+}

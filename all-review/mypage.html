@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Riveiw, 올리</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_content.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/image_gallery.css">
+    <link rel="stylesheet" href="css/overlay.css">
+
+    <!-- google web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/image_gallery.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/mypage.js"></script>
+</head>
+
+<body>
+        <!-- 글 상세 (오버레이 레이어) -->
+        <div id="content_detail">
+            <div class="content_container">
+                <img src="images/image_view1.jpeg">
+                <div>
+                    <!-- profile -->
+                    <div class="profile_box">
+                        <img src="images/profile1.jpg">
+                        <div>
+                            <span>농담곰</span>
+                            <span>nongdam_review</span>
+                        </div>
+                        <span>3시간</span>
+                    </div>
+                    <!-- star -->
+                    <div class="star">
+                        <img src="icons/star_colored.png">
+                        <img src="icons/star_colored.png">
+                        <img src="icons/star_colored.png">
+                        <img src="icons/star_colored.png">
+                        <img src="icons/star_half.png">
+                    </div>
+                    <!-- 글 내용 -->
+                    <p>현재 올리 서버는 닫혀있는 상태입니다! 렌더링된 페이지만 보여드리고 있습니다. JSP를 포함한 모든 코드는 <a href="#"></a>이곳에서 확인하실 수 있습니다.</p>
+                    <!-- 좋아요, 댓글, 공유 -->
+                    <div class="like_container">
+                        <div>
+                            <span>like</span><span>31</span>
+                        </div>
+                        <div>
+                            <span>comment</span><span>8</span>
+                        </div>
+                        <div>
+                            <span>share</span>
+                        </div>
+                    </div>
+    
+                    <!-- 댓글영역 -->
+                    <div class="comment_box">
+                        <div class="profile_box">
+                            <img src="images/profile5.jpeg">
+                            <div>
+                                <span>농담곰</span>
+                                <span>아주 좋아요!</span>
+                            </div>
+                            <div class="star"></div>
+                            <span>3시간</span>
+                        </div>
+    
+                        <div class="profile_box">
+                            <img src="images/html_icon.png">
+                            <div>
+                                <span>HTML사용자</span>
+                                <span>도움이 됩니다.</span>
+                            </div>
+                            <span>3시간</span>
+                        </div>
+    
+                        <div class="profile_box">
+                            <img src="images/profile4.jpg">
+                            <div>
+                                <span>유저1</span>
+                                <span>재미있습니다</span>
+                            </div>
+                            <span>3시간</span>
+                        </div>
+    
+                        <div class="profile_box">
+                            <img src="images/profile3.jpg">
+                            <div>
+                                <span>리뷰</span>
+                                <span>저도 그렇게 생각해요!</span>
+                            </div>
+                            <span>3시간</span>
+                        </div>
+    
+                        <div class="profile_box">
+                            <img src="images/profile2.jpg">
+                            <div>
+                                <span>reviewer123</span>
+                                <span>유용하네요.</span>
+                            </div>
+                            <span>3시간</span>
+                        </div>
+                    </div>
+                    <!-- /댓글 -->
+                </div>
+    
+            </div>
+        </div>
+        
+    <div id="sidebar">
+        <a href="index.html"><span>All Review 올리</span></a>
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="search.html">검색</a></li>
+            <li><a href="alarm.html">알림</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="mypage.html">프로필</a></li>
+            <li><a href="#">게시하기</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="mypage_profile">
+            <img src="images/profile1.jpg">
+            <div>
+                <span>농담곰</span>
+                <span>nongdam_review</span>
+                <span>안녕하세요. 리뷰를 좋아하는 농담곰입니다.</span>
+            </div>
+
+            <ul>
+                <li class="mypage_button">
+                    <span>privacy setting</span>
+                    <ul>
+                        <li onClick="location.href='#'">탈퇴하기</li>
+                        <li onClick="location.href='#'">로그아웃</li>
+                    </ul>
+                </li>
+                <li class="mypage_button">
+                    <span>setting</span>
+                    <ul>
+                        <li onClick="location.href='#'">프로필 수정</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="#" class="check">게시물 26</a>
+            <a href="#">팔로워 312</a>
+            <a href="#">팔로우 126</a>
+        </div>
+
+        <div class="image_box">
+            <div>
+                <img src="images/image_view7.jpeg">
+                <div class="gallery_overlay">
+                    <div>
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                    </div>
+    
+                    <div>
+                        <div>
+                            <span>like</span>
+                            <span>15</span>
+                        </div>
+                        <div>
+                            <span>comment</span>
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/image_view13.jpeg">
+                <div class="gallery_overlay">
+                    <div>
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                    </div>
+    
+                    <div>
+                        <div>
+                            <span>like</span>
+                            <span>15</span>
+                        </div>
+                        <div>
+                            <span>comment</span>
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/image_view10.jpeg">
+                <div class="gallery_overlay">
+                    <div>
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                    </div>
+    
+                    <div>
+                        <div>
+                            <span>like</span>
+                            <span>15</span>
+                        </div>
+                        <div>
+                            <span>comment</span>
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/image_food3.jpeg">
+                <div class="gallery_overlay">
+                    <div>
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                        <img src="icons/star_white.png">
+                    </div>
+    
+                    <div>
+                        <div>
+                            <span>like</span>
+                            <span>15</span>
+                        </div>
+                        <div>
+                            <span>comment</span>
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.image_box -->
+    </div>
+    <!-- /content -->
+
+    <div id="popular">
+        <h3>실시간 검색어</h3>
+        <ol>
+            <li>
+                <a href="">
+                    <div>
+                        <span>HTML</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>맛집</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>하얀 농담곰</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>컴퓨터</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>데이터베이스</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>맛있는 커피</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>JavaScript</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>jQuery</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>웹사이트</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                        <span>올리뷰</span>
+                        <span>201 게시물</span>
+                    </div>
+                    <span>평점 3.0</span>
+                </a>
+            </li>
+        </ol>
+    </div>
+    <!-- /#popular -->
+
+</body>
+
+</html>
